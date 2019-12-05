@@ -1,0 +1,108 @@
+@use 'base'
+@mixin font
+    font-size: 30px    
+
+
+body
+  font: 100% base.$font-stack 
+  background-color: base.$primary-color
+  
+.landing
+    background-color: #00695c
+    h1
+        text-align: center
+        font-size: 50px
+    .nav
+        height: 70px
+        margin: 0px
+        border: 1px solid base.$primary-color
+        ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+            overflow: hidden
+            background-color: #ffffff00
+            
+        li
+            float: left
+            font-size: 25px
+            display: block
+            color: base.$white-color
+            text-align: center
+            padding: 14px 16px
+            text-decoration: none
+    .container
+        @extend .title
+        display: flex  
+        div
+            width: 600px
+            color: base.$primary-color
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 0px 15px 0px 15px
+            p
+                font-size: 25px
+        form
+            background-color: base.$white-color
+            width: 600px
+            text-align: center
+            @include font
+            border-top-left-radius: 20px
+            border-top-right-radius: 20px
+            h6
+                color: base.$border-color
+            input
+                width: 300px
+                height: 40px
+            button
+                background-color: base.$border-color
+                width: 250px
+                height: 70px
+                font-size: 25px
+                border: none
+                color: base.$primary-color
+                transform: skew(-20deg)
+.title
+    margin: 0px 100%/12*2 0px 100%/12*2
+    h1
+        font-size: 30px
+        text-align: center
+    p
+        @extend h1
+
+.list
+    @extend .title
+    ul
+        font-size: 20px
+        li
+            color: base.$border-color
+            font-weight: bold
+.cost
+    @extend .title
+    table
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif
+        border-collapse: collapse
+        width: 70%
+        th
+            @extend td
+            padding-top: 12px
+            padding-bottom: 12px
+            text-align: left
+            background-color: base.$border-color
+            color: white
+        td
+            border: 1px solid #ddd
+            padding: 8px
+.footer 
+    // position: relative
+    left: 0
+    bottom: 0
+    width: 100%
+    background-color: #4CAF50
+    color: white
+    text-align: center 
+    p
+        padding-top: 20px
+        padding-bottom: 20px       

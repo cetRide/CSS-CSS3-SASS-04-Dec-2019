@@ -1,0 +1,119 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.landing {
+  background-color: #00695c;
+}
+.landing h1, .landing .title p, .landing .cost p, .landing .list p, .title .landing p, .cost .landing p, .list .landing p, .landing .container p {
+  text-align: center;
+  font-size: 50px;
+}
+.landing .nav {
+  height: 70px;
+  margin: 0px;
+  border: 1px solid #f5f5f5;
+}
+.landing .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff00;
+}
+.landing .nav li {
+  float: left;
+  font-size: 25px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.landing .container {
+  display: flex;
+}
+.landing .container div {
+  width: 600px;
+  color: #f5f5f5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px 0px 15px;
+}
+.landing .container div p {
+  font-size: 25px;
+}
+.landing .container form {
+  background-color: #ffffff;
+  width: 600px;
+  text-align: center;
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.landing .container form h6 {
+  color: #33b5e5;
+}
+.landing .container form input {
+  width: 300px;
+  height: 40px;
+}
+.landing .container form button {
+  background-color: #33b5e5;
+  width: 250px;
+  height: 70px;
+  font-size: 25px;
+  border: none;
+  color: #f5f5f5;
+  transform: skew(-20deg);
+}
+
+.title, .cost, .list, .landing .container {
+  margin: 0px 16.6666666667% 0px 16.6666666667%;
+}
+.title h1, .cost h1, .list h1, .title p, .cost p, .list p, .landing .container h1, .landing .container p {
+  font-size: 30px;
+  text-align: center;
+}
+.list ul {
+  font-size: 20px;
+}
+.list ul li {
+  color: #33b5e5;
+  font-weight: bold;
+}
+
+.cost table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+.cost table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #33b5e5;
+  color: white;
+}
+.cost table td, .cost table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*# sourceMappingURL=c.css.map */
